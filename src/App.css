@@ -1,38 +1,128 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  height: 80px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
+
+.container-column {
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.container-row {
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-row img {
+  width: 80px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 30px;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+  transition: all .5s;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+.slider {
+  height: 450px;
+  width: 100%;
+  background-image: url('./assets/Slide.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+.about {
+  padding: 60px 15%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text-center {
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bg-primary {
+  background-color: #f3f3f3;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.p-60 {
+  padding: 60px 0px;
+}
+
+.products {
+  padding: 20px 0px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.product {
+  padding: 10px;
+  border: 2px solid black;
+}
+
+.product img {
+  display: block;
+  width: auto;
+  height: 320px;
+}
+
+.product h3 {
+  height: 44px;
+}
+
+.product a {
   color: white;
+  background-color: black;
+  text-decoration: none;
+  padding: 8px 20px;
+  margin-top: 10px;
+  display: inline-block;
 }
 
-.App-link {
-  color: #61dafb;
+footer {
+  padding: 10px 0px;
+  margin-top: 20px;
+  color: white;
+  background-color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer p {
+  text-align: center;
 }
