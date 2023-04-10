@@ -77,6 +77,24 @@ li a:hover {
   text-align: center;
 }
 
+.badge {
+  background-color: rgb(253, 238, 32);
+  color: black;
+  padding: 5px;
+  display: inline-block;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+table,
+table td {
+  border: 1px solid #ccc;
+}
+
+table td {
+  padding: 7px;
+}
+
 .bg-primary {
   background-color: #f3f3f3;
 }
@@ -107,13 +125,45 @@ li a:hover {
   height: 44px;
 }
 
-.product a {
+.product h3 a {
+  color: black;
+  text-decoration: none;
+  transition: all .3s;
+}
+
+.product h3 a:hover {
+  color: rgb(197, 188, 66);
+  text-decoration: underline;
+}
+
+.product a.details-btn {
   color: white;
   background-color: black;
   text-decoration: none;
   padding: 8px 20px;
   margin-top: 10px;
   display: inline-block;
+}
+
+.product-image {
+  margin-right: 60px;
+}
+
+.product-image img {
+  width: 300px;
+}
+
+.add-to-cart input {
+  border: 1px solid black;
+  padding: 5px 15px;
+  margin-right: 10px;
+}
+
+.add-to-cart button {
+  color: white;
+  background-color: black;
+  border: none;
+  padding: 6px 15px;
 }
 
 footer {
