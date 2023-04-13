@@ -13,9 +13,9 @@ function LatestProducts({movies}) {
                 <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.original_title}/>
               </Link>
               <div className='details'>
-                <h3><Link to={`product/${movie.id}`}>{movie.original_title}</Link></h3>
+                <h3><Link to={`/product/${movie.id}`}>{movie.original_title}</Link></h3>
                 <p>Popuarity: {movie.popularity}</p>
-                <Link to={`product/${movie.id}`} className='details-btn'>Details</Link>
+                <Link to={`/product/${movie.id}`} className='details-btn'>Details</Link>
               </div>
           </div>
           ))}

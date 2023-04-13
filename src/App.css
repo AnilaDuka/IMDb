@@ -95,6 +95,30 @@ table td {
   padding: 7px;
 }
 
+.pagination {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  list-style-type: none;
+}
+
+.pagination a {
+  background-color: black;
+  color: white;
+  display: inline-block;
+  padding: 8px 16px;
+  transition: all .4s;
+}
+
+.pagination a:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
 .bg-primary {
   background-color: #f3f3f3;
 }
@@ -104,6 +128,7 @@ table td {
 }
 
 .products {
+  width: 960px;
   padding: 20px 0px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -117,8 +142,9 @@ table td {
 
 .product img {
   display: block;
-  width: auto;
-  height: 320px;
+  width: 200px;
+  height: 300px;
+  margin: 0 auto;
 }
 
 .product h3 {
